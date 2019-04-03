@@ -8,10 +8,12 @@ import {MatButtonModule, MatCheckboxModule, MatInputModule, MatFormFieldModule, 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PrincipalComponent } from './pages/principal/principal.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,BrowserAnimationsModule,

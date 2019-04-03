@@ -1,3 +1,19 @@
-<p>
-  login works!
-</p>
+<div>
+  <form [formGroup]="form">
+    <div>
+      <mat-form-field>
+        <input matInput type="text" placeholder="E-mail"
+          formControlName="email" >
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <input matInput type="password" placeholder="Senha"
+        formControlName="senha">
+      </mat-form-field>
+    </div>
+    <div>
+      <button (click)="logar()">Acessar</button>
+    </div>
+  </form> 
+</div>
