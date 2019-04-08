@@ -13,7 +13,7 @@ export class UsuarioService {
 
   public logar(login:string,senha:string):Observable<any> {
     let user = {
-      login:login,
+      email:login,
       senha:senha
     }
     let url = 'http://localhost:8080/Revisao/rest/usuario/logar';

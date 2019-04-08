@@ -4,14 +4,23 @@
       <mat-form-field>
         <input matInput type="text" placeholder="E-mail"
           formControlName="email" >
+          <mat-error *ngIf="form.controls['email'].hasError('required') ">
+            Campo Obrigatório
+          </mat-error>
       </mat-form-field>
     </div>
     <div>
       <mat-form-field>
         <input matInput type="password" placeholder="Senha"
         formControlName="senha">
+        <mat-error *ngIf="form.controls['senha'].hasError('required')">
+          Campo Obrigatório
+        </mat-error>
       </mat-form-field>
     </div>
+    <span class="mat-warn" *ngIf="form.controls['email'].hasError('invalido') == true " >
+      O E-mail ou senha estão inválidos!
+    </span>
     <div>
       <button (click)="logar()">Acessar</button>
     </div>
